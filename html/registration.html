@@ -14,7 +14,7 @@
     <main>
         <section class="container relative mt-10 h-full mx-auto grid place-items-center ">
            
-           <div class="w-2/4 grid rounded-md py-4 place-items-center relative overflow-hidden" style="background-color: rgba(204, 204, 204, 0.26);">
+           <div class="w-3/4 grid rounded-md py-4 place-items-center relative overflow-hidden" style="background-color: rgba(204, 204, 204, 0.26);">
                 <div class="w-60  absolute -top-10 rounded-full h-60 filter blur-sm " style="z-index: -100; 
                 background-color: rgb(249, 117, 71); right: -20%;" >
                 </div>
@@ -28,37 +28,48 @@
 
                     </span>
                 </h1>
-                <form action="" method="POST" class="flex flex-col w-8/12 gap-5 pt-10">
-                    <div class="flex gap-10">
+                <form action="" method="POST" class="flex flex-col w-8/12 items-center gap-5 pt-10">
+                    <div class="flex flex-wrap gap-10">
                         <label for="username" class="w-20">
                             User Name
                         </label>
                         <input type="text" name="username" id="username" class="border-2 p-2 rounded-md" placeholder="Enter your user name">
                     </div>
                     
-                    <div class="flex gap-10 w-full bg-red">
+                    <div class="flex flex-wrap gap-10 ">
                         <label for="email" class="w-20">
                            Email
                         </label>
                         <input type="email" name="email" id="email" class="border-2 p-2  rounded-md" placeholder="Enter your user email">
                     </div>
 
-                    <div class="flex gap-10 w-full bg-red">
+                    <div class="flex flex-wrap gap-10 ">
                         <label for="phone" class="w-20">
                            Phone
                         </label>
                         <input type="phone" name="phone" id="phone" class="border-2 p-2  rounded-md" placeholder="Enter your user phone number">
                     </div>
                     
-                    <div class="flex gap-10">
-                        <label for="Password" class="w-20">
+                    <div class="flex flex-wrap gap-10">
+                        <label for="password" class="w-20">
                         Password
                         </label>
                         <input type="password" name="password" id="password" class="border-2 p-2 rounded-md" placeholder="Enter your password">
                     </div>
                    
+                    <div class="flex flex-wrap gap-10">
+                        <label for="confirm-password" class="w-20">
+                        Confirm Password
+                        </label>
+                        <input type="password" name="confirm-password" id="confirm-password" class="border-2 p-2 rounded-md" placeholder="Enter your confirm password">
+                    </div>
+                   
                     <div class="w-full grid place-items-center">
-                        <input type="submit" name="submit" class="bg-blue-800 py-2 px-4 rounded-md text-white">
+                        <input type="submit" name="submit" class="bg-blue-800 py-2 w-3/5 text-lg px-4 rounded-md text-white">
+                    </div>
+                    <div class="w-full grid place-items-center">
+                        <h4>Already Registered?</h4>
+                        <input type="submit" name="submit" value="Login" class="bg-blue-800 py-2 w-3/5 text-lg px-4 rounded-md text-white">
                     </div>
                 </form>
            </div>
