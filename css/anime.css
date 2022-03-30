@@ -1,0 +1,16 @@
+.first{
+    opacity: 0;
+    position: relative;
+    transform: translateY(10%);
+}
+.second{
+    animation: animateDiv 2s forwards;
+    transition: all 200ms ease;
+}
+@keyframes animateDiv {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}

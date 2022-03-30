@@ -8,6 +8,7 @@
     <title>Shopracks</title>
    
     <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="stylesheet" href="./css/anime.css">
 
 </head>
 
@@ -52,12 +53,12 @@
                     <li>
                         <button class="rounded-2xl   text-gray-100 w-max h-8  flex flex-col justify-center 
                         py-4 px-3 " style="background-color: rgb(249, 117, 71);">
-                            GET STARTED
+                           <a href="./html/registration.html">GET STARTED</a> 
                         </button>
                     </li>
                     <li>
                         <button class="w-28 rounded-full " style="border:2px solid rgb(249, 117, 71)">
-                            LOGIN
+                           <a href="./html/login.html">LOGIN</a> 
                         </button>
                     </li>
                 </ul>
@@ -69,7 +70,7 @@
     <main class=" container m-auto flex flex-col justify-center items-center text-gray-500">
         <!-- ::::::::::::::::Introduction:::::::::::::::::::::::::::::::::::::::: -->
         <section class="w-full   relative  overflow-hidden">
-            <div class=" hidden md:block  absolute rounded-full"
+            <div class=" no hidden md:block  absolute rounded-full"
                 style="right: -80%; bottom:0%; padding-bottom: 50%; background-color: rgb(249, 117, 71);
                 height: 100%; width: 90%;">
             </div>
@@ -185,7 +186,7 @@
         </section>
 
         <!-- ::::::::::::::::::::::::Testimonial Section::::::::::::::::::::::::::::::::::: -->
-        <section class="w-full  flex-col flex items-center ">
+        <section id="section1" class="w-full  flex-col flex items-center ">
             <div class="w-10/12 h-max  bg-gradient-to-t from-blue-800 
             via-indigo-700 to-pink-500 rounded-xl text-center md:py-10  py-5 px-10 md:px-20"
                 style="background:linear-gradient()">
@@ -366,7 +367,7 @@
             </div>
         </section>
     </footer>
-
+    <script src="./script/index.js"></script>
 </body>
 
 </html>
