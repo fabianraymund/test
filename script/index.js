@@ -1,8 +1,10 @@
+
 // Dom elements
 const section1 = document.getElementById('section1')
 const sections = document.querySelectorAll('section')
 
 // Function
+
 function scroll(param) {
     const options={
         threshold: 0,
@@ -35,3 +37,7 @@ sections.forEach(section=>{
     })
    
 })
+
+
+
+

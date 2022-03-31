@@ -14,3 +14,23 @@
 
     }
 }
+#menu-content{
+    transition: all 200ms linear;
+    opacity: 0;
+    animation: menuContent 2s forwards;
+}
+@keyframes menuContent  {
+    to{
+        opacity: 1;
+    }
+}
+.btn{
+    transition: all 100ms linear;
+    transform: scale(0.5);
+    animation: button 1s 100ms forwards;
+}
+@keyframes button  {
+    to{
+        transform: scale(1);
+    }
+}
