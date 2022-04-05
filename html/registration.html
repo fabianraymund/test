@@ -7,7 +7,11 @@
         <title>Shopracks</title>
         <link rel="stylesheet" href="../css/tailwind.css">
         <link rel="stylesheet" href="../css/anime.css">
-
+        <style>
+            .div>p{
+                color: red;
+            }
+        </style>
     </head>
     <body class="overflow-x-hidden">
         <!-- ::::::::::::::::::::::::Header Section:::::::::::::::::::::::::::::::::::::: -->
@@ -51,7 +55,7 @@
                         <li
                             class="hover:bg-blue-800 hover:text-gray-200 rounded-r-full w-full grid place-items-center hover:border-gray-800">
                             <button>
-                                <a href="./html/contact.html">
+                                <a href="./contact.html">
                                     CONTACT US
                                 </a>
                             </button>
@@ -59,7 +63,7 @@
                         <li
                             class="hover:bg-blue-800 hover:text-gray-200 rounded-r-full w-full grid place-items-center hover:border-gray-800">
                             <button>
-                                <a href="./html/blog.html">
+                                <a href="./blog.html">
                                     BLOG
                                 </a>
                             </button>
@@ -67,7 +71,7 @@
                         <li
                             class="hover:bg-blue-800 hover:text-gray-200 rounded-r-full w-full grid place-items-center hover:border-gray-800">
                             <button>
-                                <a href="./html/about.html">
+                                <a href="./about.html">
                                     ABOUT
                                 </a>
                             </button>
@@ -76,13 +80,13 @@
                             class="hover:bg-blue-800 hover:text-gray-200 rounded-r-full w-full grid place-items-center hover:border-gray-800">
                             <button class="rounded-2xl   text-gray-100 w-max h-8  flex flex-col justify-center 
                                     py-4 px-3 " style="background-color: rgb(249, 117, 71);">
-                                <a href="./html/registration.html">GET STARTED</a>
+                                <a href="./registration.html">GET STARTED</a>
                             </button>
                         </li>
                         <li
                             class="hover:bg-blue-800 hover:text-gray-200 rounded-r-full w-full grid place-items-center hover:border-gray-800">
                             <button class="w-28 rounded-full " style="border:2px solid rgb(249, 117, 71)">
-                                <a href="./html/login.html">LOGIN</a>
+                                <a href="./login.html">LOGIN</a>
                             </button>
                         </li>
                     </ul>
@@ -111,7 +115,7 @@
                         </li>
                         <li>
                             <button>
-                                <a href="./html/blog.html">
+                                <a href="./blog.html">
                                     BLOG
                                 </a>
                             </button>
@@ -141,7 +145,7 @@
         <!-- :::::::::::::::::::::::::: End of Header :::::::::::::::::::::::::::::::::::::: -->
 
 
-        <main>
+        <main class="mt-20">
             <section class="container relative mt-10 h-full mx-auto grid place-items-center ">
 
                 <div class="w-3/4 grid shadow-md rounded-md py-4 place-items-center relative overflow-hidden"
@@ -160,7 +164,23 @@
 
                         </span>
                     </h1>
-                    <form action="" method="POST" class="flex flex-col w-8/12 items-center gap-5 pt-10">
+                    <form name="form" action="" method="POST" class="flex flex-col w-8/12 items-center gap-5 pt-10">
+                        <div id="regErr">
+
+                        </div>
+                        <div>
+                            <div class="flex flex-wrap gap-10">
+                                <label for="fullName" class="w-20">
+                                   Full Name
+                                </label>
+                                <input type="text" name="fullName" id="fullName" class="border-2 p-2 rounded-md"
+                                    placeholder="Enter your full name">
+                            </div>
+                            <div id="err" class=" w-3/5 mx-auto">
+
+                            </div>
+                        </div>
+
                         <div class="flex flex-wrap gap-10">
                             <label for="username" class="w-20">
                                 User Name
@@ -216,7 +236,7 @@
         </main>
         <!-- :::::::::::::::::::::::::::::: End of Main ::::::::::::::::::::::::::::::::: -->
 
-
+      
 
         <footer style="background-color: rgb(249, 117, 71);" class="w-full px-20  h-screen  text-gray-200
                 p-10 py-20 mt-40">
@@ -314,5 +334,6 @@
             </section>
         </footer>
         <script src="../script/menuScript.js"></script>
+        <script src="../script/registration.js"></script>
     </body>
 </html>

@@ -1,5 +1,9 @@
 
 // Dom elements
+const user=sessionStorage.getItem('login')
+if(user){
+    console.log(user)
+}
 const section1 = document.getElementById('section1')
 const sections = document.querySelectorAll('section')
 
